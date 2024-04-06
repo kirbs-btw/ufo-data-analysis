@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.front-face{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../src/ufo-front.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.charts-one{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--mid-grey);
+}
