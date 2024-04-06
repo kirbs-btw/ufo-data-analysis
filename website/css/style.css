@@ -6,3 +6,8 @@
     --mid_green: #709e22;
     --dark_green: #2b3d0b;
 }
+
+body{
+    margin: 0;
+    padding: 0;
+}
