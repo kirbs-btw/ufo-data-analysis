@@ -15,7 +15,25 @@ body{
     background-repeat: no-repeat;
 }
 
-.charts-one{
+
+.big-chart{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--mid-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart-box-big{
+    width: 93.33%; /* to match the with of the small divs*/
+    height: 95%;
+    background-color: var(--black);
+    border-radius: 1vh;
+}
+
+
+.small-chart{
     width: 100vw;
     height: 100vh;
     background-color: var(--mid-grey);
@@ -33,10 +51,18 @@ body{
     align-items: center;
 }
 
-.chart-box{
+.chart-box-small{
     background-color: var(--black);
     height: 80%;
     width: 45%;
     border-radius: 1vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
 
+.small-chart-title{
+    font-family: Gotham Htf;
+    color: var(--light-green);
 }
