@@ -6,14 +6,17 @@
         <title>Document</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/main.css">
-
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet'>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
     </head>
     <body>
         <div class="front-face"></div>
         <div class="big-chart">
-            <div class="chart-box-big">
-
+            <h2 class="year-title" id="map-chart-title">UFO Sightings: 1905</h2>
+            <div class="chart-box-big" id="map">
             </div>
+            <input type="range" min="1906" max="2014" value="2010" class="slider" id="yearSlider">
         </div>
         <div class="small-chart">
             <div class="chart-box-row">
@@ -33,6 +36,6 @@
                 </div>
             </div>
         </div>
-        
     </body>
+    <script src="js/mapbox.js"></script>
 </html>
