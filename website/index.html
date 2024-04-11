@@ -6,6 +6,7 @@
         <title>Document</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/checkbox.css">
         <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
         <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet'>
         <script src="https://d3js.org/d3.v7.min.js"></script>
@@ -17,6 +18,14 @@
             <div class="chart-box-big" id="map">
             </div>
             <input type="range" min="1906" max="2014" value="2010" class="slider" id="yearSlider">
+            <div class="checkboxes-div">
+                <label class="checkbox-container">
+                    Airports (Top 10)
+                    <input type="checkbox" id="airportCheckbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            
         </div>
         <div class="small-chart">
             <div class="chart-box-row">
