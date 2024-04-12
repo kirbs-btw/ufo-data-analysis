@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'gotham_blackregular';
+    src: url('../font/gotham_black_regular-webfont.woff2') format('woff2'),
+         url('../font/gotham_black_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham_htfbook';
+  src: url('../font/gothamhtf-book-webfont.woff2') format('woff2'),
+       url('../font/gothamhtf-book-webfont.woff') format('woff');
+  font-weight: lighter;
+  font-style: normal;
+}
+
+
 :root{
     --light-grey: #48483c;
     --mid-grey: #2c2c2a;
