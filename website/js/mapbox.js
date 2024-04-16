@@ -1,3 +1,5 @@
+{ // scoping the variables only in the file
+
 mapboxgl.accessToken = 'pk.eyJ1Ijoia2lyYnMtYnR3IiwiYSI6ImNsdTJxMmhtcTA0aXIya254YWR6Zm5jZXgifQ.5zXGQGfgr5GD_aM_KvswSw';
 // ufo data
 data_url = 'https://raw.githubusercontent.com/kirbs-btw/ufo-data-analysis/main/data/clean_ufo_data.csv';
@@ -194,3 +196,5 @@ airport_toggel.addEventListener('change', function() {
         clear_map_airports();
     }
 });
+
+} // scoping 
