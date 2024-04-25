@@ -1,0 +1,128 @@
+body{
+    width: 100vw;
+    background-image: linear-gradient(60deg, rgba(43,44,48,1) 0%, rgba(15,15,15,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+
+}
+
+.dashboard-view-div{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-div{
+    height: 95%;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-bar-dashboard, .right-bar-dashboard, .middle-bar-dashboard{
+    height: 100%;
+}
+
+.left-bar-dashboard, .right-bar-dashboard{
+    width: 24%;
+}
+
+.left-bar-dashboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.graph-box-left, .graph-box-top-middle, .map-box-div-dashboard, .settings-box-right, .comment-element{
+    border-radius: 1vh;
+}
+
+.graph-box-left, .graph-box-top-middle, .map-box-div-dashboard, .settings-box-right{
+    box-shadow: 10px 10px 20px -6px #FFFFFF20;
+}
+
+.graph-box-left{
+    width: 100%;
+    min-height: 48%;
+    background-color: var(--black);
+
+}
+
+.right-bar-dashboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; 
+}
+
+.middle-bar-dashboard{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.graph-box-top-middle, .map-box-div-dashboard{
+    width: 100%;
+    height: 48%;
+    background-color: var(--black);
+}
+
+.settings-box-right{
+    width: 100%;
+    background-color: var(--black);
+}
+
+.settings-box-right{
+    height: 20%;
+}
+
+.dashboard-comments-box{
+    width: 100%;
+    height: 75%;
+    overflow-y: hidden; /*chagne to scroll*/
+}
+
+.comment-element{
+    width: 100%;
+    min-height: 20%;
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+
+}
+
+.comment-text-box{
+    width: 95%;
+    height: 95%;
+}
+
+.comment-text-box > h3{
+    font-size: 100%;
+    font-weight: lighter;
+    font-family: gotham_htfbook;
+    color: var(--light-grey);
+
+}
+
+.comment-text-box > p{
+    font-size: 120%;
+    font-family: gotham_htfbook;
+    color: #c2c2c2;
+}
+
+.map-box-div-dashboard{
+    background-image: url("../src/dummy-map-picture.PNG");
+    background-position: center;
+    background-size: cover;
+}

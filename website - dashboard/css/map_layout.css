@@ -1,0 +1,45 @@
+.map-box-div-sub-dashboard{
+    width: 100vw;
+    height: 100vh;
+    /*background-color: red;*/
+}
+
+.map-box-div-sub-dashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.chart-box-big{
+    width: 95%; /* to match the with of the small divs*/
+    height: 78%;
+    background-color: var(--black);
+    border-radius: 1vh;
+}
+
+.year-title{
+    font-family: gotham_htfbook;
+    color: white;
+    font-size: 200%;
+}
+
+.slider {
+    margin: 10px;
+    -webkit-appearance: none;
+    width: 95%;
+    height: 15px;
+    border-radius: 5px;
+    background: rgb(219, 219, 219);
+    outline: none;
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--mid-green);
+    cursor: pointer;
+}
