@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFO - Dashboard</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css' rel='stylesheet'>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard_layout.css">
+    <link rel="stylesheet" href="css/map_layout.css">
+    <link rel="stylesheet" href="css/checkbox.css">
+</head>
+    <body>
+        <div class="dashboard-view-div">
+            <div class="dashboard-div">
+                <div class="left-bar-dashboard">
+                    <div class="graph-box-left"></div>
+                    <div class="graph-box-left"></div>
+                </div>
+                <div class="middle-bar-dashboard">
+                    <div class="graph-box-top-middle"></div>
+                    <div class="map-box-div-dashboard"></div>
+                </div> 
+                <div class="right-bar-dashboard">
+                    <div class="settings-box-right">
+                        
+                    </div>
+                    <div class="dashboard-comments-box">
+                        
+                    
+                        <div class="comment-element">
+                            <div class="comment-text-box">
+                                <h3>2024-01-03</h3>
+                                <p>Some text is here to be seen because the thing is interesting and the world should know i saw a UFO in the Woods they cam down and then the whole city light up</p>
+                            </div>
+                        </div>
+                        <div class="comment-element">
+                            <div class="comment-text-box">
+                                <h3>2024-01-03</h3>
+                                <p>Some text is here to be seen because the thing is interesting and the world should know i saw a UFO in the Woods they cam down and then the whole city light up</p>
+                            </div>
+                        </div>
+                        <div class="comment-element">
+                            <div class="comment-text-box">
+                                <h3>2024-01-03</h3>
+                                <p>Some text is here to be seen because the thing is interesting and the world should know i saw a UFO in the Woods they cam down and then the whole city light up</p>
+                            </div>
+                        </div>
+                        <div class="comment-element">
+                            <div class="comment-text-box">
+                                <h3>2024-01-03</h3>
+                                <p>Some text is here to be seen because the thing is interesting and the world should know i saw a UFO in the Woods they cam down and then the whole city light up</p>
+                            </div>
+                        </div>
+                        <div class="comment-element">
+                            <div class="comment-text-box">
+                                <h3>2024-01-03</h3>
+                                <p>Some text is here to be seen because the thing is interesting and the world should know i saw a UFO in the Woods they cam down and then the whole city light up</p>
+                            </div>
+                        </div>
+                        <div class="comment-element">
+                            <div class="comment-text-box">
+                                <h3>2024-01-03</h3>
+                                <p>Some text is here to be seen because the thing is interesting and the world should know i saw a UFO in the Woods they cam down and then the whole city light up</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map-box-div-sub-dashboard">
+            <h2 class="year-title" id="map-chart-title">UFO Sightings: 1905</h2>
+            <div class="chart-box-big" id="map">
+            </div>
+            <input type="range" min="1906" max="2014" value="2010" class="slider" id="yearSlider">
+            <div class="checkboxes-div">
+                <label class="checkbox-container">
+                    Airports (Top 10)
+                    <input type="checkbox" id="airportCheckbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+    </body>
+    <script src="js/mapbox.js"></script>
+</html>
