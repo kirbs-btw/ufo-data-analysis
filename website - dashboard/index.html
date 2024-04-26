@@ -12,25 +12,30 @@
     <link rel="stylesheet" href="css/dashboard_layout.css">
     <link rel="stylesheet" href="css/map_layout.css">
     <link rel="stylesheet" href="css/checkbox.css">
+    
 </head>
     <body>
         <div class="dashboard-view-div">
             <div class="dashboard-div">
                 <div class="left-bar-dashboard">
-                    <div class="graph-box-left"></div>
-                    <div class="graph-box-left"></div>
+                    <div class="graph-box-left">
+                        <canvas id="chart-states" style="height: 80%;"></canvas>
+                    </div>
+                    <div class="graph-box-left">
+                        <canvas id="chart-shapes" style="height: 80%;"></canvas>
+                    </div>
                 </div>
                 <div class="middle-bar-dashboard">
-                    <div class="graph-box-top-middle"></div>
-                    <div class="map-box-div-dashboard"></div>
+                    <div class="graph-box-top-middle">
+                        <canvas id="chart-years"></canvas>
+                    </div>
+                    <div class="map-box-div-dashboard" onclick="scrollToSection()"></div>
                 </div> 
                 <div class="right-bar-dashboard">
                     <div class="settings-box-right">
                         
                     </div>
                     <div class="dashboard-comments-box">
-                        
-                    
                         <div class="comment-element">
                             <div class="comment-text-box">
                                 <h3>2024-01-03</h3>
@@ -71,8 +76,8 @@
                 </div>
             </div>
         </div>
-        <div class="map-box-div-sub-dashboard">
-            <h2 class="year-title" id="map-chart-title">UFO Sightings: 1905</h2>
+        <div class="map-box-div-sub-dashboard" id="map-box-div-sub-dashboard">
+            <h2 class="year-title" id="map-chart-title">UFO Sightings: 2010</h2>
             <div class="chart-box-big" id="map">
             </div>
             <input type="range" min="1906" max="2014" value="2010" class="slider" id="yearSlider">
@@ -86,4 +91,8 @@
         </div>
     </body>
     <script src="js/mapbox.js"></script>
+    <script src="js/bar_charts_years.js"></script>
+    <script src="js/scroll_to_section.js"></script>
+    <script src="js/bar_charts_states.js"></script>
+    <script src="js/bar_charts_shapes.js"></script>
 </html>
