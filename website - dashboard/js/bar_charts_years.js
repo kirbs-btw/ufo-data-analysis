@@ -25,7 +25,7 @@ d3.csv(csvUrl).then(function(data) {
     const ctx = document.getElementById('chart-years').getContext('2d');
 
     // Creating a gradient for the fill
-    const gradient = ctx.createLinearGradient(0, 0, 0, 800); // Adjust the gradient direction and size as needed
+    const gradient = ctx.createLinearGradient(0, 0, 0, 400); // Adjust the gradient direction and size as needed
     gradient.addColorStop(0, 'rgba(112, 158, 34, 0.2)'); // Start color
     gradient.addColorStop(1, 'rgba(255, 255, 255, 0)'); // End color
 

@@ -145,3 +145,34 @@ body{
     background-position: center;
     background-size: cover;
 }
+
+
+.settings-box-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings-box-split-div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.settings-inbox-div{
+    width: 80%;
+    height: 90%;
+}
+
+#choose-settings-box{
+    border-left: 3px dashed white;
+    box-sizing: border-box;
+}
+
+.settings-inbox-div > p{
+    font-size: 150%;
+    color: white;
+    font-family: gotham_htfbook;
+}
