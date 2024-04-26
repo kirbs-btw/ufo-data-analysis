@@ -51,6 +51,9 @@ body{
     width: 100%;
     min-height: 48%;
     background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -74,6 +77,22 @@ body{
     width: 100%;
     height: 48%;
     background-color: var(--black);
+}
+
+.graph-box-top-middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chart-years{
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.graph-box-left > *{
+    max-width: 90%;
+    height: 500px;
 }
 
 .settings-box-right{
