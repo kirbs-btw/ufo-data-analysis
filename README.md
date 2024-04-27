@@ -19,3 +19,9 @@ There is also the notebook inspecting the data for the visualisation.
 
 cleaned date for only US entrys und rows with complete data. 
 
+# WIP 
+- finding meningful charts
+- functions behind the comments system
+- more info behind the dots on the map
+- 
+
