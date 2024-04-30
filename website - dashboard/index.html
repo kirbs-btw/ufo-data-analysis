@@ -38,31 +38,31 @@
                                 <p>Sort by:</p>
                                 <label class="checkbox-container">
                                     Year
-                                    <input type="checkbox" id="">
+                                    <input type="checkbox" id="" class="sort-checkbox" onchange="checkboxHandler(this), set_sort_value('year'), comment_init()">
                                     <span class="checkmark"></span>
                                 </label>
                                 <label class="checkbox-container">
                                     Random
-                                    <input type="checkbox" id="">
+                                    <input type="checkbox" id="" class="sort-checkbox" onchange="checkboxHandler(this), set_sort_value('random'), comment_init()">
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
-                            
                         </div>
                         <div class="settings-box-split-div" id="choose-settings-box">
                             <div class="settings-inbox-div">
                                 <p>Choose:</p>
-                                <select name="" id="">
-                                    <option value="re">None</option>
-                                    <option value="re">Californien</option>                                    <option value="ca">Californien</option>
+                                <!-- <select name="" id="" onchange="comment_init(value, '', 'state')">-->
+                                <select name="" id="" onchange="set_state(value), comment_init()">
+                                    <option value="">None</option>
+                                    <option value="tx">Texas</option>                                    
+                                    <option value="ca">Californien</option>
                                     <option value="tx">Texas</option>
                                     <option value="po">Polen</option>
-            
                                 </select>
                                 <br><br>
-                                <select name="" id="">
-                                    <option value="ca">all</option>
-                                    <option value="ca">1976</option>
+                                <select name="" id="" onchange="set_year(value), comment_init()">
+                                    <option value="">all</option>
+                                    <option value="1949">1949</option>
                                     <option value="tx">1977</option>
                                     <option value="po">1978</option>
                                     <option value="re">1979</option>
@@ -97,4 +97,5 @@
     <script src="js/bar_charts_states.js"></script>
     <script src="js/bar_charts_shapes.js"></script>
     <script src="js/comment_data.js"></script>
+    <script src="js/comment_checkbox_handler.js"></script>
 </html>
