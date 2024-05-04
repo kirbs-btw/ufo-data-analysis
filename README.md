@@ -22,6 +22,16 @@ There is also the notebook inspecting the data for the visualisation.
 
 cleaned date for only US entrys und rows with complete data. 
 
+# about the data 
+
+- primary data in the usa 
+- sightings are avg 120sec (2min)
+- sightings are often near big airports
+- most of the sightings are in california
+- they are often described as light ore a circle
+- the data is from 1942 - 2014 (may)
+
+  
 # WIP 
 - finding meningful charts
 - functions behind the comments system
