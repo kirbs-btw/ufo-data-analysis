@@ -202,6 +202,25 @@
                 </label>
             </div>
         </div>
+        <div class="map-box-div-sub-dashboard" id="map-box-div-sub-dashboard">
+            <h2 class="year-title" id="map-chart-title">Multiple Sightings of the same UFO?</h2>
+            <div class="chart-box-big" id="map-clusters">
+            </div>
+            
+            <div class="select-clusters">
+                <select name="" id="" onchange="set_day(value), init_map_cluster()">
+                    <option value="1">1 day</option>
+                    <option value="3">3 day</option>
+                    <option value="7">7 day</option>
+                    <option value="14">14 day</option>
+                </select>
+                <select name="" id="" onchange="set_km(value), init_map_cluster()">
+                    <option value="5">5 km</option>
+                    <option value="25">25 km</option>
+                    <option value="100">100 km</option>
+                </select>
+            </div>
+        </div>
     </body>
     <script src="js/mapbox.js"></script>
     <script src="js/bar_charts_years.js"></script>
@@ -211,4 +230,5 @@
     <script src="js/comment_data.js"></script>
     <script src="js/comment_checkbox_handler.js"></script>
     <script src="js/box_plot_times.js"></script>
+    <script src="js/mapbox_ufo_cluster.js"></script>
 </html>

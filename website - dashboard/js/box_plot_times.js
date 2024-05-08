@@ -11,7 +11,7 @@
         // cutting the top 4.7% - so a bit more than the standart but the boxplot is not readable otherwise
         seconds_column_sorted = seconds_column_sorted.slice(0, 62000);
         // seconds_column_sorted = seconds_column_sorted.slice(0, 55000);
-        console.log(seconds_column);
+        // console.log(seconds_column);
 
         var box_plot_data = [{
             y: seconds_column_sorted, // Sample data

@@ -23,19 +23,18 @@ var map = new mapboxgl.Map({
 });
 
 function display_map(year){
-    console.log("loading new map");
     map.on('load', function() {
 
         // Linie um die USA zeichnen
-        map.addSource('usa', {
+        map.addSource('usa-mapa', {
           'type': 'geojson',
           'data': 'https://raw.githubusercontent.com/johan/world.geo.json/master/countries/USA.geo.json'
         });
         
         map.addLayer({
-          'id': 'usa-border',
+          'id': 'usa-border-mapa',
           'type': 'line',
-          'source': 'usa',
+          'source': 'usa-mapa',
           'layout': {},
           'paint': {
             'line-color': '#709e22',
@@ -61,7 +60,6 @@ function add_ufo_points(data_load, map, year){
     });
 
     data = data.slice(0,1000);
-    console.log(data.length);
     
     data_length = data.length;
 
@@ -91,7 +89,7 @@ function add_ufo_points(data_load, map, year){
             }
         });
     }
-    console.log("added_points");
+    // console.log("added_points");
 }
 
 function get_airportData(){
@@ -103,7 +101,7 @@ function get_airportData(){
     }).catch(function(error) {
     console.error("Error loading the CSV file:", error);
     });
-    console.log("airports_loaded");
+    // console.log("airports_loaded");
 }
 
 function add_airport_points(data){
@@ -177,11 +175,12 @@ var map_title = document.getElementById("map-chart-title");
 slider.onmouseup = function() {
     map_title.innerHTML = `UFO Sightings: ${this.value}`;
     clear_map();
+    
     add_ufo_points(data_save, map, this.value);
-    console.log(this.value);
+    // console.log(this.value);
 }
 
-display_map(1990);
+display_map(2010);
 
 // show airports 
 get_airportData();

@@ -15,7 +15,7 @@
           }
       });
 
-      console.log(shapeCounts);
+      // console.log(shapeCounts);
 
       const shapeCountsArray = Object.keys(shapeCounts).map(shape => ({ shape, count: shapeCounts[shape] }));
 

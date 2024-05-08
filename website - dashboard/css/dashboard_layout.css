@@ -107,7 +107,7 @@ body{
 .dashboard-comments-box{
     width: 100%;
     height: 75%;
-    overflow-y: hidden; /*chagne to scroll*/
+    overflow-y: scroll; /*chagne to scroll - hidden*/
 }
 
 .comment-element{
