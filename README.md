@@ -18,6 +18,8 @@ The general analysis is about the fequenzy in the states and years, also about t
 
 There is also the notebook inspecting the data for the visualisation.
 
+the most interesting visualisation is about UFOs that have been seen multiple times. so you can choose the days and distance to see if there are similar sightings
+
 # cleaning 
 
 cleaned date for only US entrys und rows with complete data. 
