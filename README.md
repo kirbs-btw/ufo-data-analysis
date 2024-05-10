@@ -6,9 +6,11 @@ The data is from kaggle [click here to see](https://www.kaggle.com/datasets/NUFO
 
 # general 
 
-The date primariely consicsts of US sightings. It's from 1910-2014.
+The date primariely consicsts of US sightings. It's from 1910-2014.There are 67000 datapoints. 
 
 It is visible that the Ufo sightings are often near airports... 
+
+some of the sightings are seen multiple times. only like 100 clusters out of 65k datapoits... 
 
 # visualisation 
 The primary dashboard is the website showing a map of the sightings and some general analysis of the data.
